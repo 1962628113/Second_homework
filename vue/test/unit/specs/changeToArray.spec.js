@@ -1,14 +1,6 @@
 import Vue from 'vue'
 import changeToArray from '@/components/changeToArray/changeToArray.vue'
 
-function replace(str){
-  str=str.replace(/[\r\n]/g, "")
-  str=str.replace(/\s+/g, "")
-  return str
-}
-function watch(){
-
-}
 describe('changeToArray.vue', () => {
   it('should return a array', () => {
     const Constructor = Vue.extend(changeToArray)

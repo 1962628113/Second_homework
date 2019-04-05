@@ -6,9 +6,6 @@ function replace(str){
   str=str.replace(/\s+/g, "")
   return str
 }
-function watch(){
-
-}
 describe('compact.vue', () => {
   it('should return a array cotain number', () => {
     const Constructor = Vue.extend(compact)
