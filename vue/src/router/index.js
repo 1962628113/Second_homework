@@ -25,7 +25,7 @@ export default new Router({
       component: compact
     },
     {
-      path:'changeToArray',
+      path:'/changeToArray',
       name:'changeToArray',
       component:changeToArray
     }
