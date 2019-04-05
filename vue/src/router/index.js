@@ -5,6 +5,7 @@ import Topfour from '@/components/Topfour/index.vue'
 import compact from '@/components/compact/compact.vue'
 import changeToArray from '@/components/changeToArray/changeToArray.vue'
 import changeToString from '@/components/changeToString/changeToString.vue'
+import Countdown from '@/components/Countdown/Countdown.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -34,6 +35,11 @@ export default new Router({
       path:'/changeToString',
       name:'changeToString',
       component:changeToString
+    },
+    {
+      path:'/Countdown',
+      name:'Countdown',
+      component:Countdown
     }
   ]
 })
