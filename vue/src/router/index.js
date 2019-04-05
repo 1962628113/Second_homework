@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Topfour from '@/components/Topfour/index.vue'
 import compact from '@/components/compact/compact.vue'
 import changeToArray from '@/components/changeToArray/changeToArray.vue'
+import changeToString from '@/components/changeToString/changeToString.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -28,6 +29,11 @@ export default new Router({
       path:'/changeToArray',
       name:'changeToArray',
       component:changeToArray
+    },
+    {
+      path:'/changeToString',
+      name:'changeToString',
+      component:changeToString
     }
   ]
 })
