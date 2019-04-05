@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Topfour from '@/components/Topfour/index.vue'
 import compact from '@/components/compact/compact.vue'
+import changeToArray from '@/components/changeToArray/changeToArray.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -22,6 +23,11 @@ export default new Router({
       path: '/compact',
       name: 'compact',
       component: compact
+    },
+    {
+      path:'changeToArray',
+      name:'changeToArray',
+      component:changeToArray
     }
   ]
 })
