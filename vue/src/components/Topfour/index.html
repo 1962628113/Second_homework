@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  Array.prototype.method = function () {
+    console.log(this.length);
+  }
+  var myArray = [1, 2, 4, 5, 6, 7]
+  myArray.name = "数组"
+  for (var index in myArray) {
+    console.log(myArray[index]);
+  }
+
+  Array.prototype.method = function () {
+    console.log(this.length);
+  }
+  var myArray = [1, 2, 4, 5, 6, 7]
+  myArray.name = "数组";
+  for (var value of myArray) {
+    console.log(value);
+  }
+  var arr = ["a", "b", "c"];
+
+  arr.forEach(function (element, index) {
+    console.log(element, index);
+  });
+
+  var arr = [1,2,3,4]
+  arr.forEach(function(value,index,aa){
+    aa[index]=value + 1
+  })
+  console.log(arr)
+  var arr = [1, 2, 3];
+
+   var root=arr.map(function(element,index,aa) {
+         return element += "m";
+     })
+  console.log(root)
+
+
+  var dd=[1,2,3,4]
+  console.log(dd.splice(2,1,1))
+  console.log(dd)
+</script>
+</html>
