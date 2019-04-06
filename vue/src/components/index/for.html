@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for实现99乘法表</title>
+</head>
+<body>
+
+</body>
+<script>
+    var str=''
+    // for(var i=1;i<=9;i++){
+    //   for(var j=1;j<=i;j++){
+    //     str+=i+'*'+j+'='+i*j+'\t'
+    //   }
+    //   str+='\n'
+    // }
+    for(var i=1;i<=9;i++){
+      for(var j=9;j>=i;j--){
+        str+=i+'*'+j+'='+i*j+'\t'
+      }
+      str+='\n'
+    }
+    // for(var i=9;i>=1;i--){
+    //   for(var j=9;j>=i;j--){
+    //     str+=i+'*'+j+'='+i*j+'\t'
+    //   }
+    //   str+='\n'
+    // }
+      // for(var i=1;i<=9;i++){
+      //   for(k=2; k<9-i; k++){
+      //     str=str+'\t'
+      //   }
+      //   for(var j=9;j>=i;j--){
+      //     str+=i+'*'+j+'='+i*j+'\t'
+      //   }
+      //   str+='\n'
+      // }
+      console.log(str)
+</script>
+</html>
