@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>倒计时</title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="countDown">
+<p>距离结束还有{{hours}}时{{minutes}}分{{seconds}}秒</p>
+</div>
+</body>
+<script>
+  new Vue({
+    el: '#countDown',
+    data: {
+      time:7200,
+      hours: 0,
+      minutes: 0,
+      seconds: 0,
+    },
+    methods:{
+      CountDown() {
+        setInterval(()=> {
+          if (this.time >= 0) {
+            this.hours= Math.floor(this.time / 3600)
+            this.minutes = Math.floor(this.time /60 % 60);
+            this.seconds = Math.floor(this.time % 60);
+            --this.time;
+          }
+        }, 1000);
+      }
+    },
+    created() {
+      this.CountDown();
+    }
+  })
+</script>
+</html>
